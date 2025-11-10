@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg" style="background: var(--primary);">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="{% url 'inicio_autozone' %}">
+        <i class="bi bi-gear-wide-connected"></i> Sistema de Administración Autozone
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="{% url 'inicio_autozone' %}"><i class="bi bi-house"></i> Inicio</a></li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-box-seam"></i> Proveedores
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="{% url 'agregar_proveedor' %}">Agregar Proveedor</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_proveedores' %}">Ver Proveedores</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_proveedores' %}">Actualizar Proveedor</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_proveedores' %}">Borrar Proveedor</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-building"></i> Sucursales
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'agregar_sucursal' %}">Agregar Sucursal</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_sucursal' %}">Ver Sucursales</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_sucursal' %}">Actualizar Sucursal</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_sucursal' %}">Borrar Sucursal</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-box-seam"></i> Almacenes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'agregar_almacen' %}">Agregar Almacén</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_almacen' %}">Ver Almacenes</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_almacen' %}">Actualizar Almacén</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_almacen' %}">Borrar Almacén</a></li>
+            </ul>
+          </li>
+          
+  
+        </ul>
+      </div>
+    </div>
+  </nav>
